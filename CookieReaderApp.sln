@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookieReaderApp", "CookieReaderApp\CookieReaderApp.csproj", "{C0CB6523-D5FE-4D62-A69E-F2CC48544A5F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A40EC950-5E10-4E34-8B9F-FC8536452E75} = {A40EC950-5E10-4E34-8B9F-FC8536452E75}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthApp", "..\AuthApp\AuthApp\AuthApp.csproj", "{A40EC950-5E10-4E34-8B9F-FC8536452E75}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0CB6523-D5FE-4D62-A69E-F2CC48544A5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0CB6523-D5FE-4D62-A69E-F2CC48544A5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0CB6523-D5FE-4D62-A69E-F2CC48544A5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0CB6523-D5FE-4D62-A69E-F2CC48544A5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A40EC950-5E10-4E34-8B9F-FC8536452E75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A40EC950-5E10-4E34-8B9F-FC8536452E75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A40EC950-5E10-4E34-8B9F-FC8536452E75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A40EC950-5E10-4E34-8B9F-FC8536452E75}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

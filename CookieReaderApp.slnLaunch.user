@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "Both",
+    "Projects": [
+      {
+        "Path": "..\\AuthApp\\AuthApp\\AuthApp.csproj",
+        "Action": "Start",
+        "DebugTarget": "https"
+      },
+      {
+        "Path": "CookieReaderApp\\CookieReaderApp.csproj",
+        "Action": "Start",
+        "DebugTarget": "https"
+      }
+    ]
+  }
+]
