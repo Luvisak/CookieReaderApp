@@ -4,7 +4,7 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// 🔹 Cargar clave de cifrado desde appsettings.json
+//Cargar clave de cifrado desde appsettings.json
 var encryptionKey = builder.Configuration["CookieSettings:EncryptionKey"];
 if (string.IsNullOrEmpty(encryptionKey))
 {
@@ -12,13 +12,13 @@ if (string.IsNullOrEmpty(encryptionKey))
 }
 var sharedKey = Convert.FromBase64String(encryptionKey);
 
-// 🔹 Agregar `DataProtection` para poder descifrar la cookie de `AuthApp`
+//`DataProtection` para poder descifrar la cookie de `AuthApp`
 builder.Services.AddDataProtection()
-    .SetApplicationName("SharedAuthApp") // 🔹 Debe ser el mismo nombre que en `AuthApp`
-    .PersistKeysToFileSystem(new DirectoryInfo(@"C:\SharedKeys")) // 🔹 Usar la misma ubicación de claves
-    .ProtectKeysWithDpapi(); // 🔹 Protege las claves con DPAPI en Windows
+    .SetApplicationName("SharedAuthApp") 
+    .PersistKeysToFileSystem(new DirectoryInfo(@"C:\SharedKeys"))
+    .ProtectKeysWithDpapi();
 
-// 🔹 Configurar autenticación con cookies
+
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options =>
     {
@@ -26,7 +26,7 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
         options.Cookie.HttpOnly = true;
         options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
         options.Cookie.SameSite = SameSiteMode.Lax;
-        options.Cookie.Domain = "localhost"; // 🔹 Permitir compartir cookies entre AuthApp y CookieReaderApp
+        options.Cookie.Domain = "localhost"; //Permite compartir cookies entre AuthApp y CookieReaderApp
     });
 
 builder.Services.AddAuthorization();
