@@ -17,7 +17,7 @@ namespace CookieReaderApp.Controllers
                 var name = user.FindFirst(ClaimTypes.Name)?.Value ?? "Desconocido";
                 var role = user.FindFirst(ClaimTypes.Role)?.Value ?? "Sin rol";
 
-                return Content($"✅ Cookie encontrada y autenticada.\nUsuario autenticado: {name}, Rol: {role}");
+                return Content($"✅ Usuario autenticado: {name}, Rol: {role}");
             }
 
             return Content("❌ La cookie no se autenticó correctamente.");

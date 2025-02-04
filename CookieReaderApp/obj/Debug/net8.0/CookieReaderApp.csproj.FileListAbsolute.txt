@@ -32,3 +32,4 @@ C:\Users\Usuario\source\repos\CookieReaderApp\CookieReaderApp\obj\Debug\net8.0\r
 C:\Users\Usuario\source\repos\CookieReaderApp\CookieReaderApp\obj\Debug\net8.0\CookieReaderApp.pdb
 C:\Users\Usuario\source\repos\CookieReaderApp\CookieReaderApp\obj\Debug\net8.0\CookieReaderApp.genruntimeconfig.cache
 C:\Users\Usuario\source\repos\CookieReaderApp\CookieReaderApp\obj\Debug\net8.0\ref\CookieReaderApp.dll
+C:\Users\Usuario\source\repos\CookieReaderApp\CookieReaderApp\obj\Debug\net8.0\CookieReaderApp.sourcelink.json
