@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CookieReaderApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+222e015a42c2a73c8265dafaf69b757964a37392")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+40603a67525b8593228dfcf11ce4c73bd3e4b7f6")]
 [assembly: System.Reflection.AssemblyProductAttribute("CookieReaderApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CookieReaderApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
